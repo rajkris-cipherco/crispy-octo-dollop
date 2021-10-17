@@ -66,6 +66,8 @@
             //});
         })
     }
+})();
+
 
 
 const Widget = Object.create({
@@ -86,6 +88,3 @@ const Widget = Object.create({
             return wdg;
         }
     });
-
-
-})();
