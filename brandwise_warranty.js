@@ -1,5 +1,9 @@
-(function() {
-  document.getElementById("brandwise-btn").innerHTML = "<button type='button' onclick=alert('Hello from Brandwise!!!!!')>Click Me!</button>";
-
-})();
-
+const Widget = Object.create({
+    create(chatId) {
+        const wdg = document.createElement("div")
+        wdg.classList.add("chat-box");
+        wdg.innerHTML = `<h1>Chat: ${ chatId }</h1>`;
+        // Load your chat data into UI
+        return wdg;
+    }
+});
