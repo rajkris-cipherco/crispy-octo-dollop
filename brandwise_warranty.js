@@ -59,7 +59,16 @@
                 href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
             });
             bootstrap_css_link.appendTo('head');
-            const Widget = Object.create({
+            /******* Load HTML *******/
+            //var jsonp_url = "example.com/srtest?callback=?";
+            //$.getJSON(jsonp_url, function (data) {
+            //  $("#myModal_srsr").modal("show");
+            //});
+        })
+    }
+
+
+const Widget = Object.create({
         create(chatId) {
             const wdg = document.createElement("div")
             wdg.classList.add("brandwise-warranty");
@@ -78,12 +87,5 @@
         }
     });
 
-            /******* Load HTML *******/
-            //var jsonp_url = "example.com/srtest?callback=?";
-            //$.getJSON(jsonp_url, function (data) {
-            //  $("#myModal_srsr").modal("show");
-            //});
-        })
-    }
 
 })();
